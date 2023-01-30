@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body ng-app="meuApp">
     
+    <header>
+            <div class="logo">
+                <a href=""><img width="90" src="images/klipartz.com.png" alt=""></a>
+            </div>
 
+          <nav class="menu">
+            <ul style="display: flex;">
+              <li style="list-style: none; margin-right: 20px;"><a href="index.html#home">Home</a></li>
+              <li style="list-style: none; margin-right: 20px;"><a href="index.html#servicos">Serviços</a></li>
+              <li style="list-style: none; margin-right: 20px;"><a href="index.html#sobreNos">Sobre Nós</a></li>
+              <li style="list-style: none; margin-right: 20px;"><a href="index.html#produtos">Produtos</a></li>
+              <li style="list-style: none;"><a href="index.html#contato">Contato</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <!-- imagem energia solar -->
+    <div class="start">
+        <img width="90%" src="images/energia_solar.png" alt="">
+        <div>
+          <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> <img src="images/linha.svg" alt=""></p>
+        </div>
+    </div>
+
+    <!-- formulario contato em angular -->
+        <div class="contat">
+          <form (ngSubmit)="submitForm()">
+            <div>
+              <label for="name">Nome:</label>
+              <input type="text" id="name" [(ngModel)]="formData.name" name="name">
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" [(ngModel)]="formData.email" name="email">
+            </div>
+            <div>
+              <label for="message">Mensagem:</label>
+              <textarea id="message" [(ngModel)]="formData.message" name="message"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+          
+        </div>
 
     <script src="main.js"></script>
 </body>
 </html>
 <!-- .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..--- -->
+

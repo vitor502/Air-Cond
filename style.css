@@ -6,7 +6,65 @@
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
     box-sizing: border-box;
-
 }
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+}
+
+header{
+    background-color:antiquewhite;
+    display: flex;
+    margin: 0.4%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+
+.start img {
+    width: 50%;
+    height: 400px;
+}
+
+.start {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.4%;
+  }
+  
+  .start p {
+    text-align: center;
+  }
+
+  .start img{
+    display: flex;
+    justify-content: center;
+  }
+  
+.contat{
+    display: flex;
+    justify-content: end;
+}
+
 
 /* .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..--- */
