@@ -76,9 +76,8 @@ header{
 /* Filter */
 
 .itemsprts{
-    display: flex;
     justify-content: center;
-    position:relative;
+    align-items: center;
 }
 
 .produt ul{
