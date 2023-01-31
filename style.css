@@ -33,6 +33,11 @@ header{
     align-items: center;
 }
 
+.txtmain{
+    display: flex;
+    justify-content: center;
+}
+
 .logo{
     width: 50%;
     display: flex;
@@ -45,7 +50,7 @@ header{
 }
 
 .start {
-    background-color: bisque;
+    background-color:antiquewhite;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,12 +64,39 @@ header{
   .start img{
     display: flex;
     justify-content: center;
+    position: relative;
+
   }
   
 .contat{
     display: flex;
     justify-content: end;
 }
+
+/* Filter */
+
+.itemsprts{
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+
+.produt ul{
+    display: flex;
+}
+
+.produt ul li{
+    display: flex;
+    list-style-type: none;
+    padding-right: 14px;
+}
+
+.produt ul li a img{
+    width: 40%;
+    justify-content: space-around;
+}
+
+
 
 
 /* .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..--- */

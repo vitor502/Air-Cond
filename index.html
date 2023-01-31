@@ -2,59 +2,147 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app = angular.module("meuApp", []);
+
+        app.controller("controlador", function($scope) {
+            $scope.showMenu = false;
+            $scope.toggleMenu = function() {
+                $scope.showMenu = !$scope.showMenu;
+            }
+        });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body ng-app="meuApp">
-    
-    <header>
-            <div class="logo">
-                <a href=""><img width="90" src="images/klipartz.com.png" alt=""></a>
-            </div>
+<!-- Nav Bar in -->
+  <header>
+          <div class="logo">
+              <a href=""><img width="90" src="images/klipartz.com.png" alt=""></a>
+          </div>
 
-          <nav class="menu">
-            <ul style="display: flex;">
-              <li style="list-style: none; margin-right: 20px;"><a href="index.html#home">Home</a></li>
-              <li style="list-style: none; margin-right: 20px;"><a href="index.html#servicos">Serviços</a></li>
-              <li style="list-style: none; margin-right: 20px;"><a href="index.html#sobreNos">Sobre Nós</a></li>
-              <li style="list-style: none; margin-right: 20px;"><a href="index.html#produtos">Produtos</a></li>
-              <li style="list-style: none;"><a href="index.html#contato">Contato</a></li>
-            </ul>
-          </nav>
+        <nav class="menu">
+          <ul style="display: flex;">
+            <li style="list-style: none; margin-right: 20px;"><a href="index.html#home">Home</a></li>
+            <li style="list-style: none; margin-right: 20px;"><a href="index.html#servicos">Serviços</a></li>
+            <li style="list-style: none; margin-right: 20px;"><a href="index.html#sobreNos">Sobre Nós</a></li>
+            <li style="list-style: none; margin-right: 20px;"><a href="index.html#produtos">Produtos</a></li>
+            <li style="list-style: none;"><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
     </header>
+<!-- Nav Bar out -->
 
-    <!-- imagem energia solar -->
+
+<!-- Energia Solar in -->
     <div class="start">
         <img width="90%" src="images/energia_solar.png" alt="">
         <div>
           <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> <img src="images/linha.svg" alt=""></p>
         </div>
     </div>
+<!-- Energia Solar in -->
 
-    <!-- formulario contato em angular -->
-        <div class="contat">
-          <form (ngSubmit)="submitForm()">
-            <div>
-              <label for="name">Nome:</label>
-              <input type="text" id="name" [(ngModel)]="formData.name" name="name">
-            </div>
-            <div>
-              <label for="email">Email:</label>
-              <input type="email" id="email" [(ngModel)]="formData.email" name="email">
-            </div>
-            <div>
-              <label for="message">Mensagem:</label>
-              <textarea id="message" [(ngModel)]="formData.message" name="message"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
-          
+
+<!-- Serviços in -->
+
+<!-- Serviços out -->
+
+
+<!-- Sobre Nós in -->
+
+<!-- Sobre Nós out -->
+
+
+<!-- Produtos in -->
+  <div class="txtmain">
+    <h2>Produtos</h2>
+  </div>
+
+  <!-- Box Icons in -->
+    <div class="itemsprts">
+      <form>
+        <input type="radio" ng-model="opcao" value="condicionado">Ar Condicionado
+        <input type="radio" ng-model="opcao" value="inverter">Ar Condicionado Inverter
+        <input type="radio" ng-model="opcao" value="split">Multi Split
+        <input type="radio" ng-model="opcao" value="energia">Energia Solar
+      </form>
+      <!-- Icons condicionado -->
+      <div ng-switch="opcao">
+        <div class="produt" ng-switch-when="condicionado">
+            <ul>
+              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
+              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
+              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
+              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
+              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
+            </ul>
         </div>
+
+        <div class="produt" ng-switch-when="inverter">
+          <ul>
+            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
+            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
+            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
+            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
+            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
+          </ul>
+      </div>
+
+      <div class="produt" ng-switch-when="split">
+        <ul>
+          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
+          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
+          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
+          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
+          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
+        </ul>
+    </div>
+
+    <div class="produt" ng-switch-when="energia">
+      <ul>
+        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
+        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
+        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
+        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
+        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
+      </ul>
+  </div>
+
+
+    </div>
+    </div>
+  <!-- Box Icons out -->
+
+<!-- Produtos out -->
+
+
+<!-- Contato in -->
+  <div class="contat">
+    <form (ngSubmit)="submitForm()">
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" [(ngModel)]="formData.name" name="name">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="formData.email" name="email">
+      </div>
+      <div>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" [(ngModel)]="formData.message" name="message"></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    
+  </div>
+ <!-- Contato out -->
 
     <script src="main.js"></script>
 </body>
 </html>
 <!-- .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..--- -->
-
