@@ -8,11 +8,23 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-divs:rgba(218, 217, 216, 0.466);
+    --bg-space:rgba(197, 230, 228, 0.548);
+}
+
 .container{
     max-width: 1068px;
     margin: auto;
     width: 100%;
 }
+
+.txtmain{
+    display: flex;
+    justify-content: center;
+}
+
+/* topo do site in */
 
 .nav{
     display: flex;
@@ -21,21 +33,9 @@
 }
 
 header{
-    background-color:antiquewhite;
+    background-color: var(--bg-divs);
     display: flex;
     margin: 0.4%;
-}
-
-.menu{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    align-items: center;
-}
-
-.txtmain{
-    display: flex;
-    justify-content: center;
 }
 
 .logo{
@@ -44,36 +44,66 @@ header{
     justify-content: start;
 }
 
-.start img {
+.menu{
+    display: flex;
+    justify-content: center;
     width: 50%;
-    height: 400px;
-}
-
-.start {
-    background-color:antiquewhite;
-    display: flex;
     align-items: center;
-    justify-content: center;
+}
+/* topo do site out */
+
+/* apresentasão in */
+
+.energiaSolar{
+    display: flex;
     margin: 0.4%;
-  }
-  
-  .start p {
-    text-align: center;
-  }
-
-  .start img{
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-  }
-  
-.contat{
-    display: flex;
-    justify-content: end;
+    background-color: var(--bg-divs);
 }
 
-/* Filter */
+.energiaSolarImagem{
+    width: 50%;
+}
+
+.energiaSolarDescri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.energiaSolarDescri img{
+    z-index: 1;
+}
+
+.vmvSite{
+    background-color: var(--bg-space);
+}
+
+.vmvSite ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.vmvSite ul li{
+    list-style-type: none;
+    padding-right: 14px;
+}
+
+/* apresentasão out */
+
+/* serviços in */
+
+
+
+/* serviços out */
+
+/* sobre nós in */
+
+
+
+/* sobre nós out */
+
+/* produtos in*/
 
 .itemsprts{
     justify-content: center;
@@ -94,6 +124,17 @@ header{
     width: 40%;
     justify-content: space-around;
 }
+
+/* produtos out*/
+
+/* Contato in */
+
+.contat{
+    display: flex;
+    justify-content: end;
+}
+
+/* Contato out */
 
 
 

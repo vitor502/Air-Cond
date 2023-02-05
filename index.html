@@ -16,13 +16,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Air Cond</title>
 </head>
 <body ng-app="meuApp">
 <!-- Nav Bar in -->
   <header>
           <div class="logo">
-              <a href=""><img width="90" src="images/klipartz.com.png" alt=""></a>
+              <a href=""><img width="70" src="images/klipartz.com.png" alt=""></a>
           </div>
 
         <nav class="menu">
@@ -39,22 +39,37 @@
 
 
 <!-- Energia Solar in -->
-    <div class="start">
-        <img width="90%" src="images/energia_solar.png" alt="">
-        <div>
-          <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> <img src="images/linha.svg" alt=""></p>
+    <div class="energiaSolar">
+        <div class="energiaSolarImagem">
+          <img width="90%" src="images/energia_solar.png" alt="">
         </div>
+        <div class="energiaSolarDescri">
+          <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+          <img width="40%" src="images/linha.svg" alt="">
+        </div>
+    </div>
+
+    <div class="vmvSite">
+      <ul>
+        <li><img src="" alt="">visão</li>
+        <li><img src="" alt="">misão</li>
+        <li><img src="" alt="">valores</li>
+      </ul>
     </div>
 <!-- Energia Solar in -->
 
 
 <!-- Serviços in -->
-
+<div class="txtmain">
+  <h2>Serviços</h2>
+</div>
 <!-- Serviços out -->
 
 
 <!-- Sobre Nós in -->
-
+<div class="txtmain">
+  <h2>Sobre Nós</h2>
+</div>
 <!-- Sobre Nós out -->
 
 
@@ -122,6 +137,9 @@
 
 
 <!-- Contato in -->
+<div class="txtmain">
+  <h2>Contato</h2>
+</div>
   <div class="contat">
     <form (ngSubmit)="submitForm()">
       <div>
