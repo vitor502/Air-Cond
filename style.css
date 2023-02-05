@@ -21,7 +21,12 @@
 
 .txtmain{
     display: flex;
+    margin: 0 0.4%;
+    padding: 10px;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-divs)
 }
 
 /* topo do site in */
@@ -73,10 +78,14 @@ header{
 }
 
 .energiaSolarDescri img{
-    z-index: 1;
+
 }
 
 .vmvSite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: var(--bg-space);
 }
 
@@ -86,6 +95,7 @@ header{
 }
 
 .vmvSite ul li{
+    width: 33%;
     list-style-type: none;
     padding-right: 14px;
 }
@@ -94,7 +104,24 @@ header{
 
 /* serviços in */
 
+.imtxlist{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.4%;
+    background-color: var(--bg-divs);
+    margin-bottom: 5px;
+}
 
+.imtxlist ul{
+    display: flex;
+    justify-content: center;
+}
+
+.imtxlist ul li{
+    width: 13%;
+    list-style-type: none;
+    padding-right: 14px;
+}
 
 /* serviços out */
 
@@ -109,6 +136,7 @@ header{
 .itemsprts{
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-divs);
 }
 
 .produt ul{
