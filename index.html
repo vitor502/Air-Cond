@@ -3,22 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script>
-        var app = angular.module("meuApp", []);
-
-        app.controller("controlador", function($scope) {
-            $scope.showMenu = false;
-            $scope.toggleMenu = function() {
-                $scope.showMenu = !$scope.showMenu;
-            }
-        });
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Air Cond</title>
 </head>
-<body ng-app="meuApp">
+<body ng-app="meuApp" ng-controller="meuController">
 <!-- Nav Bar in -->
   <header>
           <div class="logo">
@@ -27,11 +17,11 @@
 
         <nav class="menu">
           <ul style="display: flex;">
-            <li style="list-style: none; margin-right: 20px;"><a href="index.html#home">Home</a></li>
-            <li style="list-style: none; margin-right: 20px;"><a href="index.html#servicos">Serviços</a></li>
-            <li style="list-style: none; margin-right: 20px;"><a href="index.html#sobreNos">Sobre Nós</a></li>
-            <li style="list-style: none; margin-right: 20px;"><a href="index.html#produtos">Produtos</a></li>
-            <li style="list-style: none;"><a href="index.html#contato">Contato</a></li>
+            <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="index.html#home">Home</a></li>
+            <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="index.html#servicos">Serviços</a></li>
+            <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="index.html#sobreNos">Sobre Nós</a></li>
+            <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="index.html#produtos">Produtos</a></li>
+            <li style="list-style: none;"><a class="buttonBoxMenu" href="index.html#contato">Contato</a></li>
           </ul>
         </nav>
     </header>
@@ -67,8 +57,8 @@
 
 <!-- Serviços in -->
 <div class="txtmain">
-  <p><h3>Serviços</h3></p>
-  <img width="20%" src="images/linha.svg" alt="">
+  <p><h2>Serviços</h2></p>
+  <img width="15%" src="images/linha.svg" alt="">
 </div>
 
 <div class="imtxlist">
@@ -93,70 +83,116 @@
 
 
 <!-- Sobre Nós in -->
-<div class="txtmain">
-  <p><h3>Sobre Nós</h3></p>
-  <img width="20%" src="images/linha.svg" alt="">
+<div class="energiaSolar">
+  
+  <div class="energiaSolarDescri">
+    <p><h2>Sobre Nós</h2></p>
+    <img width="25%" src="images/linha.svg" alt="">
+    <p>   Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Tenetur natus sint ab non <br> minus labore iure esse <br> porro tempora beatae!</p>
+  </div>
+  <div class="energiaSolarImagem">
+    <img width="40%" src="images/klipartz.com.png" alt="">
+  </div>
+  
 </div>
 <!-- Sobre Nós out -->
 
 
 <!-- Produtos in -->
 <div class="txtmain">
-  <p><h3>Produtos</h3></p>
-  <img width="20%" src="images/linha.svg" alt="">
+  <p><h2>Produtos</h2></p>
+  <img width="15%" src="images/linha.svg" alt="">
 </div>
 
   <!-- Box Icons in -->
-    <div class="itemsprts">
-      <form>
-        <input type="radio" ng-model="opcao" value="condicionado">Ar Condicionado
-        <input type="radio" ng-model="opcao" value="inverter">Ar Condicionado Inverter
-        <input type="radio" ng-model="opcao" value="split">Multi Split
-        <input type="radio" ng-model="opcao" value="energia">Energia Solar
-      </form>
-      <!-- Icons condicionado -->
-      <div ng-switch="opcao">
-        <div class="produt" ng-switch-when="condicionado">
-            <ul>
-              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
-              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
-              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
-              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
-              <li><a href="prtut.html"><img class="imgcont" src="images/condicionado1.png" alt=""></a></li>
-            </ul>
-        </div>
-
-        <div class="produt" ng-switch-when="inverter">
-          <ul>
-            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
-            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
-            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
-            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
-            <li><a href="prtut.html"><img class="imgcont" src="images/condicionado2.png" alt=""></a></li>
-          </ul>
+  <div>
+    <div class="linha w50">
+      <div class="buttonBoxMenu" ng-mouseover="funcaoArcondicionado()">
+          Ar-condicionado
       </div>
-
-      <div class="produt" ng-switch-when="split">
-        <ul>
-          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
-          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
-          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
-          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
-          <li><a href="prtut.html"><img class="imgcont" src="images/condicionado3.png" alt=""></a></li>
-        </ul>
-    </div>
-
-    <div class="produt" ng-switch-when="energia">
-      <ul>
-        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
-        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
-        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
-        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
-        <li><a href="prtut.html"><img class="imgcont" src="images/condicionado4.png" alt=""></a></li>
-      </ul>
+      <div class="buttonBoxMenu" ng-mouseover="funcaoInverter()">
+          Ar-condicionado Inverter
+      </div>
+      <div class="buttonBoxMenu" ng-mouseover="funcaoMultisplit()">
+          Multi Split
+      </div>
+      <div class="buttonBoxMenu" ng-mouseover="funcaoEnergiasolar()">
+          Energia solar
+      </div>
   </div>
 
 
+  
+      <div class="linha w100" ng-show="arcondicionado">
+        <div class="containerimg" >
+            <img src="images/condicionado1.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado1.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado1.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado1.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado1.png" alt="">
+        </div>
+    </div>
+
+    <div class="linha w100" ng-show="inverter">
+        <div class="containerimg" >
+            <img src="images/condicionado2.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado2.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado2.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado2.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado2.png" alt="">
+        </div>
+    </div>
+
+    <div class="linha w100" ng-show="multisplit">
+        <div class="containerimg" >
+            <img src="images/condicionado3.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado3.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado3.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado3.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado3.png" alt="">
+        </div>
+    </div>
+
+    <div class="linha w100" ng-show="energiasolar">
+        <div class="containerimg" >
+            <img src="images/condicionado4.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado4.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado4.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado4.png" alt="">
+        </div>
+        <div class="containerimg" >
+            <img src="images/condicionado4.png" alt="">
+        </div>
     </div>
     </div>
   <!-- Box Icons out -->
@@ -166,8 +202,8 @@
 
 <!-- Contato in -->
 <div class="txtmain">
-  <p><h3>Contato</h3></p>
-  <img width="20%" src="images/linha.svg" alt="">
+  <p><h2>Contato</h2></p>
+  <img width="15%" src="images/linha.svg" alt="">
 </div>
   <div class="contat">
     <form (ngSubmit)="submitForm()">
@@ -190,6 +226,44 @@
  <!-- Contato out -->
 
     <script src="main.js"></script>
+
+    <script>
+      var app = angular.module('meuApp', []);
+		app.controller('meuController', function($scope) {
+			$scope.arcondicionado = true;
+			$scope.inverter = false;
+			$scope.multisplit = false;
+            $scope.energiasolar = false;
+			
+			$scope.funcaoArcondicionado = function() {
+				$scope.arcondicionado = true;
+				$scope.inverter = false;
+				$scope.energiasolar = false;
+				$scope.multisplit = false;
+			}
+
+			$scope.funcaoInverter = function() {
+				$scope.inverter = true;
+				$scope.arcondicionado = false;
+				$scope.energiasolar = false;
+				$scope.multisplit = false;
+			}
+
+	$scope.funcaoMultisplit = function() {
+		$scope.multisplit = true;
+		$scope.arcondicionado = false;
+		$scope.inverter = false;
+        $scope.energiasolar = false;
+	}
+
+	$scope.funcaoEnergiasolar = function() {
+		$scope.energiasolar = true;
+		$scope.arcondicionado = false;
+		$scope.inverter = false;
+        $scope.multisplit = false;
+    }
+});
+    </script>
 </body>
 </html>
 <!-- .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..--- -->
