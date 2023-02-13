@@ -181,7 +181,18 @@ header{
 
 .contat{
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    background-color: var(--bg-divs);
+    width: 100%;
+}
+
+.contatoImagem{
+    background-color: #fff;
+    width: 50%;
+}
+
+.form{
+    width: 50%;
 }
 
 /* Contato out */
