@@ -210,17 +210,18 @@
       <img width="100%" src="images/ar_condicionado.png" alt="">
     </div>
     <form (ngSubmit)="submitForm()">
+
+        <label for="text">Endereço:</label>
+        <input type="text" id="endereco" [(ngModel)]="formData.name" name="endereco">
+
       <div>
-        <label for="name">Nome:</label>
-        <input type="text" id="name" [(ngModel)]="formData.name" name="name">
+        <input type="text" id="name" [(ngModel)]="formData.name" name="name" placeholder="Nome:">
       </div>
       <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" [(ngModel)]="formData.email" name="email">
+        <input type="email" id="email" [(ngModel)]="formData.email" name="email" placeholder="Email:">
       </div>
       <div>
-        <label for="message">Mensagem:</label>
-        <textarea id="message" [(ngModel)]="formData.message" name="message"></textarea>
+        <textarea id="message" [(ngModel)]="formData.message" name="message" placeholder="Mensagem:"></textarea>
       </div>
       <button type="submit">Enviar</button>
     </form>

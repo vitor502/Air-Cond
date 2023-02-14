@@ -195,6 +195,14 @@ header{
     width: 50%;
 }
 
+#endereco{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
 /* Contato out */
 
 
