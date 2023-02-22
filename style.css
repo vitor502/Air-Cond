@@ -205,7 +205,33 @@ header{
 
 /* Contato out */
 
+/* Scroll Top Button in */
 
+#progress{
+    background-color: #078791;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70%;
+    width: 70%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
+}
 
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+}
+
+/* Scroll Top Button out */
 
 /* .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..--- */
