@@ -36,6 +36,8 @@
     display: flex;
     align-items: center;
     padding: 18px 0;
+
+    
 }
 
 header{
@@ -140,6 +142,8 @@ header{
     text-decoration: none;
     padding: 4px;
     color: black;
+    cursor: url(images/ar-condicionado.cur), pointer;
+/* Cursor out */
 }
 
 .buttonBoxMenu:hover{
@@ -207,7 +211,7 @@ header{
 
 /* Scroll Top Button in */
 
-#progress{
+/* #progress{
     background-color: #078791;
     position: fixed;
     bottom: 20px;
@@ -230,7 +234,7 @@ header{
     place-items: center;
     font-size: 35px;
     color: #001a2e;
-}
+} */
 
 /* Scroll Top Button out */
 
