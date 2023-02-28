@@ -8,10 +8,18 @@
     scroll-padding-top: 2rem;
     box-sizing: border-box;
 }
+/* geral in */
 
 :root{
     --bg-divs:rgba(218, 217, 216, 0.466);
     --bg-space:rgba(197, 230, 228, 0.548);
+}
+
+.fundofixo{
+    background: url('images/vmv.jpg') no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size:cover;
+   
 }
 
 .container{
@@ -29,6 +37,8 @@
     flex-direction: column;
     background-color: var(--bg-divs)
 }
+
+/* geral out */
 
 /* topo do site in */
 
@@ -58,6 +68,7 @@ header{
     width: 50%;
     align-items: center;
 }
+
 /* topo do site out */
 
 /* apresentasão in */
@@ -82,16 +93,13 @@ header{
     width: 50%;
 }
 
-.energiaSolarDescri img{
-
-}
-
 .vmvSite{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: var(--bg-space);
+    height: 300px;
 }
 
 .vmvSite ul{
@@ -100,9 +108,10 @@ header{
 }
 
 .vmvSite ul li{
-    width: 33%;
+    width: 20%;
     list-style-type: none;
     padding-right: 14px;
+    background: floralwhite;
 }
 
 /* apresentasão out */
@@ -115,6 +124,7 @@ header{
     margin: 0 0.4%;
     background-color: var(--bg-divs);
     margin-bottom: 5px;
+    height: 400px;
 }
 
 .imtxlist ul{
@@ -143,7 +153,6 @@ header{
     padding: 4px;
     color: black;
     cursor: url(images/ar-condicionado.cur), pointer;
-/* Cursor out */
 }
 
 .buttonBoxMenu:hover{
@@ -208,6 +217,42 @@ header{
 }
 
 /* Contato out */
+
+/* PageShop in */
+
+.txtprodut{
+    display: flex;
+    margin: 0 0.4%;
+    padding: 10px;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: var(--bg-divs)
+}
+
+.produtDescri{
+    display: flex;
+    margin: 0.4%;
+    background-color: var(--bg-divs);
+    height: 50%;
+}
+
+.produtDescritxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.produtDescriimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+/* PageShop out */
 
 /* Scroll Top Button in */
 

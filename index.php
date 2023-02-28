@@ -10,9 +10,9 @@
     <title>Air Cond</title>
 </head>
 <body ng-app="meuApp" ng-controller="meuController">
-  <div id="progress">
+  <!-- <div id="progress">
     <span id="progress-value">&#x1F815;</span>
-  </div>
+  </div> -->
 <!-- Nav Bar in -->
   <header>
           <div class="logo">
@@ -43,16 +43,16 @@
         </div>
     </div>
 
-    <div class="vmvSite">
+    <div class="vmvSite fundofixo">
       <ul>
-        <li><img style="margin: 7%;" width="20%" src="images/visao.png" alt="">
-          <p>Visão</p>
+        <li><img style="margin: 7%;" width="25%" src="images/visao.png" alt="">
+          <p><h4>Visão</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi qui autem ullam deserunt accusantium?
         </li>
         <li><img width="25%" src="images/missao.png" alt="">
-          <p>Misão</p>
+          <p><h4>Misão</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur corporis asperiores fugiat quia! Sapiente.
         </li>
         <li><img width="20%" src="images/valores.png" alt="">
-          <p>Valores</p>
+          <p><h4>Valores</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur corporis asperiores fugiat quia! Sapiente.
         </li>
       </ul>
     </div>
@@ -60,12 +60,12 @@
 
 
 <!-- Serviços in -->
-<div class="txtmain">
-  <p><h2>Serviços</h2></p>
-  <img width="15%" src="images/linha.svg" alt="">
-</div>
+  <div class="txtmain">
+    <p><h2>Serviços</h2></p>
+    <img width="15%" src="images/linha.svg" alt="">
+  </div>
 
-<div class="imtxlist">
+  <div class="imtxlist">
   <ul>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
     <li><p>texto</p></li>
@@ -82,12 +82,12 @@
     <li><p>texto</p></li>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
   </ul>
-</div>
+  </div>
 <!-- Serviços out -->
 
 
 <!-- Sobre Nós in -->
-<div class="energiaSolar">
+  <div class="energiaSolar">
   
   <div class="energiaSolarDescri">
     <p><h2>Sobre Nós</h2></p>
@@ -98,15 +98,15 @@
     <img width="40%" src="images/klipartz.com.png" alt="">
   </div>
   
-</div>
+  </div>
 <!-- Sobre Nós out -->
 
 
 <!-- Produtos in -->
-<div class="txtmain">
+  <div class="txtmain">
   <p><h2>Produtos</h2></p>
   <img width="15%" src="images/linha.svg" alt="">
-</div>
+  </div>
 
   <!-- Box Icons in -->
   <div>
@@ -205,10 +205,10 @@
 
 
 <!-- Contato in -->
-<div class="txtmain">
+  <div class="txtmain">
   <p><h2>Contato</h2></p>
   <img width="15%" src="images/linha.svg" alt="">
-</div>
+  </div>
   <div class="contat">
     <div class="contatoImagem">
       <img width="100%" src="images/ar_condicionado.png" alt="">
@@ -231,7 +231,7 @@
     </form>
     
   </div>
- <!-- Contato out -->
+<!-- Contato out -->
 
     <script src="main.js"></script>
 
