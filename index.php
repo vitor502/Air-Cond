@@ -38,7 +38,7 @@
           <img width="90%" src="images/energia_solar.png" alt="">
         </div>
         <div class="energiaSolarDescri">
-          <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+          <p><strong>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Blanditiis quidem perspiciatis <br> harum fugiat magni doloribus?</strong></p>
           <img width="40%" src="images/linha.svg" alt="">
         </div>
     </div>
@@ -68,18 +68,18 @@
   <div class="imtxlist">
   <ul>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>texto</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores vitae culpa ut blanditiis tempore reprehenderit? Nobis.</p></li>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>texto</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores vitae culpa ut blanditiis tempore reprehenderit? Nobis.</p></li>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>texto</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores vitae culpa ut blanditiis tempore reprehenderit? Nobis.</p></li>
   </ul>
   <ul>
-    <li><p>texto</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores vitae culpa ut blanditiis tempore reprehenderit? Nobis.</p></li>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>texto</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores vitae culpa ut blanditiis tempore reprehenderit? Nobis.</p></li>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>texto</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores vitae culpa ut blanditiis tempore reprehenderit? Nobis.</p></li>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
   </ul>
   </div>
