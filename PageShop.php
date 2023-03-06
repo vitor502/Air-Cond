@@ -1,12 +1,10 @@
 <?php 
 
-include "conn/connect.php";
-$idProduto = $_GET['id_produto'];
-$lista = $conn->query("select * from vw_tbprodutos where id_produto like '%$idProduto%'");
-$row_produtos = $lista->fetch_assoc();
-$num_linhas = $lista->num_rows;
-
+    include 'produtosDetalhes.php';
+    $id = $_GET['id'];
+    
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,10 +14,11 @@ $num_linhas = $lista->num_rows;
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
     <title>Produtos</title>
 </head>
 <body ng-app="meuApp" ng-controller="meuController" style="background-color: rgba(218, 217, 216, 0.466);">
-
+<?php foreach($banco AS $dados) if($dados['id']==$id){ ?>
 <!-- Nav Bar in -->
     <header>
         <div class="logo">
@@ -42,7 +41,7 @@ $num_linhas = $lista->num_rows;
     <!-- Nome do produto via ID -->
     <div class="txtprodut">
         <p>
-            <h2><strong><?php echo $row_produtos['descri_produto'] ?></strong></h2>
+            <h2><strong><?php echo $dados['nome'] ?></strong></h2>
         </p>
         <img width="15%" src="images/linha.svg" alt="">
     </div>
@@ -51,20 +50,20 @@ $num_linhas = $lista->num_rows;
     <!-- Imagem do produto via ID -->
     <div class="produtDescri">
         <div class="produtDescriimg">
-            <a href="produto_detalhes.php?id_produto=<?php echo $row_produtos['id_produto'] ?>">
-                <img src="images/<?php echo $row_produtos['imagem_produto'] ?>" class="img-responsive img-rounded">
+            <a href="PageShop.php?id=<?php echo $dados['id'] ?>">
+                <img src="<?php echo $dados['imagem'] ?>" class="img-responsive img-rounded">
             </a>
         </div>
         <div class="produtDescritxt">
-            <p>Ar Condicionado Split 12000 BTUs <br> Midea Springer Inverter Frio <br> AirVolution 42AFVCG/38TVCB 220V</p>
+            <p><?php echo $dados['modelo'] ?></p>
             <img width="40%" src="images/linha.svg" alt="">
         </div>
         </div>
         <br>
-        <h2>Descrição do Produto:</h2>
+        <h2><?php echo $dados['descri'] ?></h2>
         <hr width="100%">
 <!-- informações do produto out -->
-
+<?php }?>
 </body>
 </html>
 <!-- .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..---  -->
