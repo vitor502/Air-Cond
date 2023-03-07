@@ -112,6 +112,7 @@ header{
     list-style-type: none;
     padding-right: 14px;
     background: floralwhite;
+    border-radius: 5px;
 }
 
 /* apresentasão out */
@@ -199,12 +200,23 @@ header{
     width: 100%;
 }
 
+.enderecoContato{
+    width: 50%;
+}
+
+.conttato{
+    width: 50%;
+}
+
 .contatoImagem{
     background-color: #fff;
     width: 50%;
 }
 
-.form{
+.contatoForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
 }
 
@@ -215,6 +227,43 @@ header{
     margin-bottom: 40px;
     width: 100%;
 }
+
+#contato article p {
+    font-size: 30px;
+    font-style: inherit;
+    margin-left: 30%;
+  }
+
+  .linhadcontato {
+    width: 40%;
+    margin-left: 18%;
+  }
+
+  .borda_c {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .mt {
+    margin-top: 20px;
+  }
+
+  .ml {
+    margin-left: 20px;
+  }
+
+  #forma_contato {
+    display: flex;
+  }
+
+  #forma_contato div {
+    display: inline;
+    margin-right: 30px;
+  }
 
 /* Contato out */
 
@@ -254,13 +303,6 @@ header{
     background-color: #fff;
 }
 
-.saleProdut{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-}
-
 .myButton {
 	box-shadow:inset 0px 0px 0px 0px #97c4fe;
 	background-color:#e3e3e3;
@@ -294,9 +336,18 @@ header{
     width: 50%;
 }
 
+.saleProdut{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
 .shop{
     display: flex;
+    flex-direction: row;
     margin: 5px;
+    
 }
 
 /* PageShop out */

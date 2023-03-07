@@ -1,6 +1,8 @@
 <?php 
-    include 'produtosDetalhes.php';
+  include 'produtosDetalhes.php';
 ?>
+<!-- include do banco de dados  -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,273 +10,87 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="icon" type="image/png" href="images/ar-condicionadop.cur"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Air Cond</title>
 </head>
 <body ng-app="meuApp" ng-controller="meuController">
+
+<!-- Scroll Top in -->
   <!-- <div id="progress">
     <span id="progress-value">&#x1F815;</span>
   </div> -->
-<!-- Nav Bar in -->
-  <header>
-          <div class="logo">
-              <a href=""><img width="70" src="images/klipartz.com.png" alt=""></a>
-          </div>
+<!-- Scroll Top out -->
 
-        <nav class="menu">
-          <ul style="display: flex;">
-            <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="#home">Home</a></li>
-            <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="#servicos">Serviços</a></li>
-            <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="#sobreNos">Sobre Nós</a></li>
-            <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="#produtos">Produtos</a></li>
-            <li style="list-style: none;"><a class="buttonBoxMenu" href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-    </header>
+<!-- Nav Bar in -->
+  <?php include "menuPublico.php" ?>
 <!-- Nav Bar out -->
 
 
 <!-- Energia Solar in -->
-    <div class="energiaSolar">
-        <div class="energiaSolarImagem">
-          <img width="90%" src="images/energia_solar.png" alt="">
-        </div>
-        <div class="energiaSolarDescri">
-          <p><strong>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Blanditiis quidem perspiciatis <br> harum fugiat magni doloribus?</strong></p>
-          <img width="40%" src="images/linha.svg" alt="">
-        </div>
-    </div>
-
-    <div class="vmvSite fundofixo">
-      <ul>
-        <li><img style="margin: 7%;" width="25%" src="images/visao.png" alt="">
-          <p><h4>Visão</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi qui 
-        </li>
-        <li><img width="25%" src="images/missao.png" alt="">
-          <p><h4>Misão</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur corporis 
-        </li>
-        <li><img width="20%" src="images/valores.png" alt="">
-          <p><h4>Valores</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur corporis 
-        </li>
-      </ul>
-    </div>
+  <?php include "energiaSolar.php" ?>
 <!-- Energia Solar out -->
 
 
 <!-- Serviços in -->
-  <div class="txtmain">
-    <p><h2>Serviços</h2></p>
-    <img width="15%" src="images/linha.svg" alt="">
-  </div>
-
-  <div class="imtxlist">
-  <ul>
-    <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
-    <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
-    <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
-  </ul>
-  <ul>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
-    <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
-    <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
-    <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-  </ul>
-  </div>
+  <?php include "servicos.php" ?>
 <!-- Serviços out -->
 
 
 <!-- Sobre Nós in -->
-  <div class="energiaSolar">
-  
-  <div class="energiaSolarDescri">
-    <p><h2>Sobre Nós</h2></p>
-    <img width="25%" src="images/linha.svg" alt="">
-    <p>   Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Tenetur natus sint ab non <br> minus labore iure esse <br> porro tempora beatae!</p>
-  </div>
-  <div class="energiaSolarImagem">
-    <img width="40%" src="images/klipartz.com.png" alt="">
-  </div>
-  
-  </div>
+  <?php include "sobreNos.php" ?>
 <!-- Sobre Nós out -->
 
 
 <!-- Produtos in -->
-  <div class="txtmain">
-  <p><h2>Produtos</h2></p>
-  <img width="15%" src="images/linha.svg" alt="">
-  </div>
-
-  <!-- Box Icons in -->
-  <div>
-    <div class="linha w50">
-      <div class="buttonBoxMenu" ng-mouseover="funcaoArcondicionado()">
-          Ar-condicionado
-      </div>
-      <div class="buttonBoxMenu" ng-mouseover="funcaoInverter()">
-          Ar-condicionado Inverter
-      </div>
-      <div class="buttonBoxMenu" ng-mouseover="funcaoMultisplit()">
-          Multi Split
-      </div>
-      <div class="buttonBoxMenu" ng-mouseover="funcaoEnergiasolar()">
-          Energia solar
-      </div>
-  </div>
-
-
-  
-      <div class="linha w100" ng-show="arcondicionado">
-        <div class="containerimg" >
-            <a href="PageShop.php?id=1"><img src="images/condicionado1.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=2"><img src="images/condicionado01.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=3"><img src="images/condicionado001.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=4"><img src="images/condicionado0001.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=5"><img src="images/condicionado00001.jpg" alt=""></a>
-        </div>
-    </div>
-
-    <div class="linha w100" ng-show="inverter">
-        <div class="containerimg" >
-            <a href="PageShop.php?id=6"><img src="images/condicionado2.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=7"><img src="images/condicionado02.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=8"><img src="images/condicionado002.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=9"><img src="images/condicionado0002.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=10"><img src="images/condicionado00002.jpg" alt=""></a>
-        </div>
-    </div>
-
-    <div class="linha w100" ng-show="multisplit">
-        <div class="containerimg" >
-            <a href="PageShop.php?id=11"><img src="images/condicionado3.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=12"><img src="images/condicionado03.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=13"><img src="images/condicionado003.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=14"><img src="images/condicionado0003.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=15"><img src="images/condicionado00003.jpg" alt=""></a>
-        </div>
-    </div>
-
-    <div class="linha w100" ng-show="energiasolar">
-        <div class="containerimg" >
-            <a href="PageShop.php?id=16"><img src="images/condicionado4.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=17"><img src="images/condicionado04.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=18"><img src="images/condicionado004.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=19"><img src="images/condicionado0004.jpg" alt=""></a>
-        </div>
-        <div class="containerimg" >
-            <a href="PageShop.php?id=20"><img src="images/condicionado00004.jpg" alt=""></a>
-        </div>
-    </div>
-    </div>
-  <!-- Box Icons out -->
-
+  <?php include "Produtos.php" ?>
 <!-- Produtos out -->
 
 
 <!-- Contato in -->
-  <div class="txtmain">
-  <p><h2>Contato</h2></p>
-  <img width="15%" src="images/linha.svg" alt="">
-  </div>
-  <div class="contat">
-    <div class="contatoImagem">
-      <img width="100%" src="images/ar_condicionado.png" alt="">
-    </div>
-    <form (ngSubmit)="submitForm()">
-
-        <label for="text">Endereço:</label>
-        <input type="text" id="endereco" [(ngModel)]="formData.name" name="endereco">
-
-      <div>
-        <input type="text" id="name" [(ngModel)]="formData.name" name="name" placeholder="Nome:">
-      </div>
-      <div>
-        <input type="email" id="email" [(ngModel)]="formData.email" name="email" placeholder="Email:">
-      </div>
-      <div>
-        <textarea id="message" [(ngModel)]="formData.message" name="message" placeholder="Mensagem:"></textarea>
-      </div>
-      <button type="submit">Enviar</button>
-    </form>
-    
-  </div>
+  <?php include "rodape.php" ?>
 <!-- Contato out -->
 
-    <script src="main.js"></script>
-
-    <script>
-      var app = angular.module('meuApp', []);
-		app.controller('meuController', function($scope) {
-			$scope.arcondicionado = true;
-			$scope.inverter = false;
-			$scope.multisplit = false;
-            $scope.energiasolar = false;
-			
-			$scope.funcaoArcondicionado = function() {
-				$scope.arcondicionado = true;
-				$scope.inverter = false;
-				$scope.energiasolar = false;
-				$scope.multisplit = false;
-			}
-
-			$scope.funcaoInverter = function() {
-				$scope.inverter = true;
-				$scope.arcondicionado = false;
-				$scope.energiasolar = false;
-				$scope.multisplit = false;
-			}
-
-	$scope.funcaoMultisplit = function() {
-		$scope.multisplit = true;
-		$scope.arcondicionado = false;
-		$scope.inverter = false;
-        $scope.energiasolar = false;
-	}
-
-	$scope.funcaoEnergiasolar = function() {
-		$scope.energiasolar = true;
-		$scope.arcondicionado = false;
-		$scope.inverter = false;
+<!-- Script JS in -->
+  <script src="main.js"></script>
+  <script>
+    var app = angular.module('meuApp', []);
+      app.controller('meuController', function($scope) {
+        $scope.arcondicionado = true;
+        $scope.inverter = false;
         $scope.multisplit = false;
-    }
-});
-    </script>
+        $scope.energiasolar = false;
+        
+        $scope.funcaoArcondicionado = function() {
+          $scope.arcondicionado = true;
+          $scope.inverter = false;
+          $scope.energiasolar = false;
+          $scope.multisplit = false;
+        }
+
+        $scope.funcaoInverter = function() {
+          $scope.inverter = true;
+          $scope.arcondicionado = false;
+          $scope.energiasolar = false;
+          $scope.multisplit = false;
+        }
+
+        $scope.funcaoMultisplit = function() {
+          $scope.multisplit = true;
+          $scope.arcondicionado = false;
+          $scope.inverter = false;
+          $scope.energiasolar = false;
+        }
+
+        $scope.funcaoEnergiasolar = function() {
+          $scope.energiasolar = true;
+          $scope.arcondicionado = false;
+          $scope.inverter = false;
+          $scope.multisplit = false;
+        }
+      });
+  </script>
+<!-- Script JS out -->
+
 </body>
 </html>
 <!-- .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..--- -->
