@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/ar-condicionadop.cur"/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="CSS/style.css">    
     <title>Produtos</title>
 </head>
 <body ng-app="meuApp" ng-controller="meuController" style="background-color: #fff;">

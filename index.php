@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="icon" type="image/png" href="images/ar-condicionadop.cur"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Air Cond</title>
 </head>
 <body ng-app="meuApp" ng-controller="meuController">
@@ -51,7 +51,7 @@
 <!-- Contato out -->
 
 <!-- Script JS in -->
-  <script src="main.js"></script>
+  <script src="JS/main.js"></script>
   <script>
     var app = angular.module('meuApp', []);
       app.controller('meuController', function($scope) {
