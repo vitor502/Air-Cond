@@ -17,7 +17,7 @@
     
     <title>Produtos</title>
 </head>
-<body ng-app="meuApp" ng-controller="meuController" style="background-color: rgba(218, 217, 216, 0.466);">
+<body ng-app="meuApp" ng-controller="meuController" style="background-color: #fff;">
 <?php foreach($banco AS $dados) if($dados['id']==$id){ ?>
 <!-- Nav Bar in -->
     <header>
@@ -27,7 +27,7 @@
 
     <nav class="menu">
         <ul style="display: flex;">
-        <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="#home">Home</a></li>
+        <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="index.php">Home</a></li>
         <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="#servicos">Serviços</a></li>
         <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="#sobreNos">Sobre Nós</a></li>
         <li style="list-style: none; margin-right: 20px;"><a class="buttonBoxMenu" href="#produtos">Produtos</a></li>
@@ -46,24 +46,67 @@
         <img width="15%" src="images/linha.svg" alt="">
     </div>
 
-    <!-- Descrição do produto -->
-    <!-- Imagem do produto via ID -->
     <div class="produtDescri">
+        <!-- Imagem do produto via ID in -->
         <div class="produtDescriimg">
             <a href="PageShop.php?id=<?php echo $dados['id'] ?>">
-                <img src="<?php echo $dados['imagem'] ?>" class="img-responsive img-rounded">
+                <img class="produtDescriimg" src="<?php echo $dados['imagem'] ?>" class="img-responsive img-rounded">
             </a>
         </div>
+        <!-- Imagem do produto via ID out -->
+        <!-- Descrição do produto in -->
         <div class="produtDescritxt">
-            <p><?php echo $dados['modelo'] ?></p>
+            <p><h2><?php echo $dados['modelo'] ?></h2></p>
             <img width="40%" src="images/linha.svg" alt="">
         </div>
+    </div>
+
+        <div class="shop">
+            <div class="produtDescriShop">
+                <p><h2>Descrição</h2></p>
+                <img width="15%" src="images/linha.svg" alt="">
+            </div>
+
+        <div class="saleProdut">
+            <a href="#" class="myButton">Comprar</a>
+            <h2><?php echo $dados['preco'] ?></h2>
         </div>
-        <br>
-        <h2><?php echo $dados['descri'] ?></h2>
+        </div>
+        
         <hr width="100%">
+        <?php echo $dados['descri'] ?>
+        <!-- Descrição do produto out-->
 <!-- informações do produto out -->
 <?php }?>
+
+<!-- Contato in -->
+    <div class="txtmain">
+  <p><h2>Contato</h2></p>
+  <img width="15%" src="images/linha.svg" alt="">
+  </div>
+  <div class="contat">
+    <div class="contatoImagem">
+      <img width="100%" src="images/ar_condicionado.png" alt="">
+    </div>
+    <form (ngSubmit)="submitForm()">
+
+        <label for="text">Endereço:</label>
+        <input type="text" id="endereco" [(ngModel)]="formData.name" name="endereco">
+
+      <div>
+        <input type="text" id="name" [(ngModel)]="formData.name" name="name" placeholder="Nome:">
+      </div>
+      <div>
+        <input type="email" id="email" [(ngModel)]="formData.email" name="email" placeholder="Email:">
+      </div>
+      <div>
+        <textarea id="message" [(ngModel)]="formData.message" name="message" placeholder="Mensagem:"></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    
+  </div>
+<!-- Contato out -->
 </body>
 </html>
 <!-- .... - - .--. ... ---... -..-. -..-. --. .. - .... ..- -... .-.-.- -.-. --- -- -..-. ...- .. - --- .-. ..... ----- ..---  -->
