@@ -1,6 +1,6 @@
 <header>
           <div class="logo">
-              <a href=""><img width="70" src="images/klipartz.com.png" alt=""></a>
+              <a href="index.php"><img width="70" src="images/klipartz.com.png" alt=""></a>
           </div>
 
         <nav class="menu">
