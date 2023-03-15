@@ -22,32 +22,44 @@
 <!-- Scroll Top out -->
 
 <!-- Nav Bar in -->
-  <?php include "menuPublico.php" ?>
+  <section id="">
+    <?php include "menuPublico.php" ?>
+  </section>  
 <!-- Nav Bar out -->
 
 
 <!-- Energia Solar in -->
-  <?php include "energiaSolar.php" ?>
+  <section id="">
+    <?php include "energiaSolar.php" ?>
+  </section>  
 <!-- Energia Solar out -->
 
 
 <!-- Serviços in -->
-  <?php include "servicos.php" ?>
+  <section id="servicos">
+    <?php include "servicos.php" ?>
+  </section>  
 <!-- Serviços out -->
 
 
 <!-- Sobre Nós in -->
-  <?php include "sobreNos.php" ?>
+  <section id="sobreNos">
+    <?php include "sobreNos.php" ?>
+  </section>  
 <!-- Sobre Nós out -->
 
 
 <!-- Produtos in -->
-  <?php include "Produtos.php" ?>
+  <section id="Produtos">
+    <?php include "Produtos.php" ?>
+  </section>  
 <!-- Produtos out -->
 
 
 <!-- Contato in -->
-  <?php include "rodape.php" ?>
+  <section id="rodape">
+    <?php include "rodape.php" ?>
+  </section>  
 <!-- Contato out -->
 
 <!-- Script JS in -->

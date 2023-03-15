@@ -10,16 +10,19 @@
 }
 /* geral in */
 
+header{
+    text-align: center;
+}
+
 :root{
     --bg-divs:rgba(218, 217, 216, 0.466);
     --bg-space:rgba(197, 230, 228, 0.548);
 }
 
 .fundofixo{
-    background: url('images/vmv.jpg') no-repeat fixed;
+    background: url('images/vmv.jpg') no-repeat fixed !important;
     background-size: cover;
     -webkit-background-size:cover;
-   
 }
 
 .container{
@@ -33,6 +36,7 @@
     margin: 0 0.4%;
     padding: 10px;
     align-items: center;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
     background-color: var(--bg-divs)
@@ -67,6 +71,8 @@ header{
     justify-content: center;
     width: 50%;
     align-items: center;
+    text-align: center;
+
 }
 
 /* topo do site out */
@@ -98,7 +104,6 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--bg-space);
     height: 300px;
 }
 
@@ -121,6 +126,8 @@ header{
 
 .imtxlist{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin: 0 0.4%;
     background-color: var(--bg-divs);
@@ -195,6 +202,7 @@ header{
 
 .contat{
     display: flex;
+    text-align: center;
     justify-content: center;
     background-color: var(--bg-divs);
     width: 100%;
@@ -205,7 +213,7 @@ header{
 }
 
 .conttato{
-    width: 50%;
+    width: 50%;    text-align: center;
 }
 
 .contatoImagem{
@@ -218,6 +226,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 50%;
+    text-align: center;
 }
 
 #endereco{
@@ -286,12 +295,14 @@ header{
     height: 50%;
 }
 
-.produtDescritxt{
+.produtDescritxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .produtDescriimg{
@@ -303,43 +314,11 @@ header{
     background-color: #fff;
 }
 
-.myButton {
-	box-shadow:inset 0px 0px 0px 0px #97c4fe;
-	background-color:#e3e3e3;
-	border-radius:12px;
-	border:4px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#333233;
-	font-family:Verdana;
-	font-size:20px;
-	font-weight:bold;
-	font-style:italic;
-	padding:15px 32px;
-	text-decoration:none;
-}
-
-.myButton:hover {
-	background-color:#d1d1d1;
-}
-
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
 .produtDescriShop{
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    width: 50%;
-}
-
-.saleProdut{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: 50%;
 }
 
@@ -351,6 +330,29 @@ header{
 }
 
 /* PageShop out */
+
+/* Responsivo in */
+
+@media (max-width: 750px) {
+    .txtprodut {
+        text-align: center;
+    }
+    .produtDescri {
+        display: flex;
+        flex-direction: column;
+    }
+    .produtDescriimg img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 840px) {
+    .contatoImagem{
+        display: none;
+    }
+}
+
+/* Responsivo out */
 
 /* Scroll Top Button in */
 

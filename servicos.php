@@ -6,18 +6,18 @@
   <div class="imtxlist">
   <ul>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
     <li><img width="90%" src="images/servicos1.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
     <li><img width="90%" src="images/servicos2.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
   </ul>
   <ul>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
     <li><img width="90%" src="images/servicos2.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
     <li><img width="90%" src="images/servicos1.jpg" alt=""></li>
-    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil optio earum maiores</p></li>
+    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
     <li><img width="90%" src="images/servicos.jpg" alt=""></li>
   </ul>
   </div>

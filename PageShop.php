@@ -9,6 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/ar-condicionadop.cur"/>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="CSS/style.css">    
@@ -46,23 +47,9 @@
             <div class="produtDescritxt">
                 <p><h2><?php echo $dados['modelo'] ?></h2></p>
                 <img width="40%" src="images/linha.svg" alt="">
+                <?php echo $dados['descri'] ?>
             </div>
-            </div>
-
-            <div class="shop">
-                <div class="produtDescriShop">
-                    <p><h2>Descrição</h2></p>
-                    <img width="15%" src="images/linha.svg" alt="">
-                </div>
-                
-                <div class="saleProdut">
-                    <a href="#" class="myButton">Comprar</a>
-                    <h2><?php echo $dados['preco'] ?></h2>
-                </div>
-            </div>
-            
-            <hr width="100%">
-            <?php echo $dados['descri'] ?>
+        </div>
         <!-- Informação do produto out-->
     <!-- Descrição do Produto out -->
     <?php }?>
