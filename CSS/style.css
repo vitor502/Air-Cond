@@ -10,9 +10,17 @@
 }
 /* geral in */
 
-header{
+ a[href="#"] {
+    transition: all 0.15s ease-in-out;
+  }
+
+ html {
+    scroll-behavior: smooth;
+  }
+
+ header{
     text-align: center;
-}
+  }
 
 :root{
     --bg-divs:rgba(218, 217, 216, 0.466);
@@ -50,8 +58,7 @@ header{
     display: flex;
     align-items: center;
     padding: 18px 0;
-
-    
+    position: fixed;    
 }
 
 header{
@@ -72,7 +79,6 @@ header{
     width: 50%;
     align-items: center;
     text-align: center;
-
 }
 
 /* topo do site out */
@@ -199,6 +205,31 @@ header{
 /* produtos out*/
 
 /* Contato in */
+
+.myButton{
+	box-shadow: 0 0 9px#97c4fe;
+	background-color:#e3e3e3;
+	border-radius:12px;
+	border:4px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#333233;
+	font-family:Verdana;
+	font-size:20px;
+	font-weight:bold;
+	font-style:italic;
+	padding:15px 32px;
+	text-decoration:none;
+}
+
+.myButton:hover {
+	background-color:#d1d1d1;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 .contat{
     display: flex;

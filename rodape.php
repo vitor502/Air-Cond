@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="icon" type="image/png" href="images/ar-condicionadop.cur"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+	<title>Document</title>
+</head>
+<body>
 <div class="txtmain">
   <p><h2>Contato</h2></p>
   <img width="15%" src="images/linha.svg" alt="">
@@ -38,9 +49,11 @@
 			<form>
 				<textarea style="background-color: transparent;" name="mensagem" id="mensagem" rows="1" cols="49" placeholder="Mensagem" class="mt borda_c"></textarea>
 			</form>
-			<a href="#" class="myButton">Enviar</a>
+			<a href="#"><button class="myButton" ><span>Enviar</span></button></a>
 		</div>
 	</article>
     </div>
     
   </div>
+</body>
+</html>
