@@ -47,7 +47,7 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--bg-divs)
+    background-color: var(--bg-divs); 
 }
 
 /* geral out */
@@ -65,18 +65,27 @@ header{
     background-color: var(--bg-divs);
     display: flex;
     margin: 0.4%;
+    height: 100px;
+    justify-content:space-around;
 }
 
-.logo{
-    width: 50%;
+header > .logo{
     display: flex;
     justify-content: start;
 }
 
+.logo{
+    width: 15%;
+    display: flex;
+    justify-content: start;
+}
+
+
+
 .menu{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 55%;
     align-items: center;
     text-align: center;
 }
@@ -105,25 +114,267 @@ header{
     width: 50%;
 }
 
-.vmvSite{
+#card{
     display: flex;
-    align-items: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    gap: 20px;
+    width: 100%;
     justify-content: center;
+    margin: 0 0 25px 0;
+}
+
+.card {
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 30px 0px;
+    width: 60vw;
+    min-width: 200px;
+    max-width: 750px;
+    padding: 30px 10px 30px 0px;
+    background: #ffffff;
+    border-radius: 24px;
+    height: 200px;
+    font-size: smaller;
+}
+.card img {
+    max-width: 150px;
+    background: #ffffff79;
+    width: 28vw;
+    height: 130px;
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 30px;
+    border-radius: inherit;
+    box-shadow: 0 10px 9px rgb(0 0 0 / 30%)
+}
+.card1{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 30px 80px;
     text-align: center;
-    height: 300px;
-}
-
-.vmvSite ul{
+    margin-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #ffffff;
+    border: solid 1px #acacac;
+    border-radius: 24px;
+    width: 80%;
+    min-width: 100px;
+    max-width: 380px;
+    max-height: 900px;
+    padding: 30px 10px 30px 0px;
+    height: 250px;
     display: flex;
-    justify-content: space-around;
+    font-size: smaller;
+    box-shadow: 0px 0px 25px -15px rgb(5, 0, 5);
 }
 
-.vmvSite ul li{
-    width: 20%;
-    list-style-type: none;
-    padding-right: 14px;
-    background: floralwhite;
-    border-radius: 5px;
+.card1 img{
+    margin: -100px 0 30px 0;
+    height: 180px;
+    width: 30%;
+    object-fit: cover;
+    max-width: 200px;
+    border-radius: inherit;
+    box-shadow: 0 10px 9px rgb(0 0 0 / 30%)
+}
+
+.card1 div{
+    font-size: smaller;
+}
+
+
+
+.card1 h2{
+    font-size: x-large;
+}
+
+.card1 h3 {
+    color: rgb(0 0 0 / 90%);
+    font-size:small;
+}
+.card1 p { color: rgb(0 0 0 / 90%);}
+
+.card1 a {
+    border: 0;
+    color: #f8f8f8;
+    text-decoration: none;
+    font-family: inherit;
+    padding: 8px 17px;
+    font-size: 16px;
+    border-radius: 33px;
+}
+
+@media (width <= 1740px){
+    .card{
+        flex-direction: column !important;
+        justify-content: center;
+        text-align: center;
+        margin-top: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 80%;
+        min-height: 250px;
+    }
+
+    .card img {
+    margin: -100px 0 30px 0;
+    width: 50%;
+    max-width: 1000px;
+    min-width: 180px;
+}
+}
+
+@media (width <= 1380px){
+
+    #card{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 15px;
+        flex-direction: row !important;
+        min-width: 550px !important;
+        max-width: 600px !important;
+        min-height: 250px;
+    }
+
+    .card h2{
+        font-size: xx-larger;
+    }
+
+    .card img{
+        margin: -35px 0 0 -100px;
+        width: 100% !important;
+        min-width: 250px !important;
+        max-width: 300px !important;
+        min-height: 160px !important ;
+        max-width: 100px !important ;
+    }
+    .card1{
+        flex-direction: row !important;
+        width: 350px;
+        height: 250px !important;
+        margin: 20px;
+    }
+    .card1 img{
+        margin-top: 0;
+        margin-left: -30px;
+        width: 150px;
+        height: 145px !important;
+    }
+}
+@media (width <= 767px){
+    .card{
+        flex-direction: column !important;
+        justify-content: center;
+        text-align: center;
+        margin: auto 20px;
+        margin-bottom: 30px;
+        margin-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 40%;
+        min-width: 360px !important;
+        max-height: 900px;
+        min-height: 200px;
+    }
+
+    .card img{
+        margin: -100px 0 30px 0;
+        width: 85%;
+        min-height: 140px !important;
+        min-width: 160px !important;
+    }
+    .card1{
+        height: 180px !important;
+        width: 260px;
+    }
+    .card1 img{
+        width: 110px;
+        height: 110px!important;
+    }
+    .card1 h2{
+        font-size: 15px;
+        width: 200px;
+    }
+    .card1 h3{
+        font-size: 11px;
+    }
+    .card1 p{
+        width: 140px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .card1 a{
+        font-size: 12px;
+        padding: 9px;
+    }
+
+}
+
+@media (width <= 440px){
+    .card{
+        flex-direction: column !important;
+        justify-content: center;
+        text-align: center;
+        margin: auto 20px;
+        margin-bottom: 60px;
+        margin-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 40%;
+        min-width: 260px !important;
+        max-height: 900px;
+        min-height: 180px;
+    }
+
+    .card img{
+        margin: -100px 0 30px 0;
+        width: 60% !important;
+        height: max-content;
+        min-width: 40px !important;
+        min-height: 40px !important;
+        max-width: 300px !important;
+    }
+    .card1{
+        height: 115px !important;
+        width: 200px;
+        padding-right: 0 !important;
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+    .card1 img{
+        width: 80px;
+        height: 80px!important;
+        margin-bottom: 10px;
+        margin-right: 15px;
+    }
+    .card1 h2{
+        font-size: 10px;
+        width: 100px;
+    }
+    .card1 h3{
+        font-size: 8px;
+    }
+    .card1 p{
+        font-size: 5px;
+        width: 60px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .card1 a{
+        font-size:8px;
+        padding: 5px;
+    }
 }
 
 /* apresentasão out */
@@ -147,9 +398,9 @@ header{
 }
 
 .imtxlist ul li{
-    width: 13%;
+    width: 15%;
     list-style-type: none;
-    padding-right: 14px;
+    padding-right: 20px;
 }
 
 /* serviços out */
@@ -165,13 +416,19 @@ header{
 .buttonBoxMenu{
     text-decoration: none;
     padding: 4px;
+    margin: 3px auto auto;
     color: black;
-    cursor: url(images/ar-condicionado.cur), pointer;
+    cursor: pointer;
 }
 
 .buttonBoxMenu:hover{
-    color: black;
-    border: solid 2px black;
+    width: 0;
+    height: 2px;
+    background-color: #6ba7f7;
+    margin: 3px auto auto;
+    transition: 0.3s;
+    color: #fff;
+    border-radius: 10%;
 }
 
 .containerimg{

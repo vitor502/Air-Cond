@@ -10,7 +10,7 @@
 <body>
     <div class="energiaSolar">
         <div class="energiaSolarImagem">
-          <img width="90%" src="images/energia_solar.png" alt="">
+          <img width="70%" src="images\energia_solar.png" alt="">
         </div>
         <div class="energiaSolarDescri">
           <p><strong>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Blanditiis quidem perspiciatis <br> harum fugiat magni doloribus?</strong></p>
@@ -18,18 +18,34 @@
         </div>
     </div>
       <!-- Visão Misão Valores -->
-    <div class="vmvSite fundofixo">
-      <ul>
-        <li><img style="margin: 7%;" width="25%" src="images/visao.png" alt="">
-          <p><h4>Visão</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam modi qui 
-        </li>
-        <li><img width="25%" src="images/missao.png" alt="">
-          <p><h4>Misão</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur corporis 
-        </li>
-        <li><img width="20%" src="images/valores.png" alt="">
-          <p><h4>Valores</h4></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur corporis 
-        </li>
-      </ul>
+      <div id="card">
+        <div class="card" style="background: var(--bg-divs)">
+            <img src="images/visao.png" alt="" />
+            <div>
+                <h2>VISÃO</h2>
+                <p>
+                Queremos melhorar a conexão do hóspede com a nossa pousada através da tecnologia e sustentabilidade!
+                </p>
+            </div>
+        </div>
+        <div class="card" style="background: var(--bg-divs)">
+            <img src="images/missao.png" alt="" />
+            <div>
+                <h2>MISSÃO</h2>
+                <p>
+                    Existimos para dar lazer, qualidade de vida e felicidade para nossos hóspedes!
+                </p>
+            </div>
+        </div>
+        <div class="card" style="background: var(--bg-divs)">
+            <img src="images/valores.png" alt="" />
+            <div>
+                <h2>VALORES</h2>
+                <p>
+                Sustentabilidade, Qualidade de Vida, Felicidade, Sonho e Lazer 
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

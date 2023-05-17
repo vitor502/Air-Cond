@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <link rel="icon" type="image/png" href="images/ar-condicionadop.cur"/>
+    <link rel="icon" type="image/png" href="images/ArcoFrioBRAC.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Air Cond</title>
